@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
     templateUrl: './counter.component.html'
 })
 
-export class CounterComponent{}
+export class CounterComponent{
+    counter: number = 0;
+    
+    addCounter() {
+        this.counter += 1;
+    }
+    
+
+}
