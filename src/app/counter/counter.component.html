@@ -1,5 +1,11 @@
 <div class="m-5 text-center">
-  <button class="btn btn-success mx-5">Add</button>
-  <button class="btn btn-danger mx-5">Sub</button>
+  <button class="btn btn-success mx-5" (click)="addCounter()">Add</button>
+  <button
+    class="btn btn-danger mx-5"
+    [disabled]="counter === 0"
+    (click)="subCounter()"
+  >
+    Sub
+  </button>
   <p>{{ counter }}</p>
 </div>
