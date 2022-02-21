@@ -11,6 +11,10 @@ export class CounterComponent{
     addCounter() {
         this.counter += 1;
     }
-    
+
+    subCounter() {
+        this.counter -= 1;
+
+    }
 
 }
